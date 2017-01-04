@@ -24,6 +24,10 @@ WorkShop.prototype.stroke = function (color) {
   this.ctx.strokeStyle = color
 }
 
+WorkShop.prototype.fill = function (color) {
+  this.ctx.fillStyle = color
+}
+
 WorkShop.prototype.translate = function (x, y) {
   this.ctx.translate(x, y)
 }
@@ -39,3 +43,13 @@ WorkShop.prototype.push = function () {
 WorkShop.prototype.pop = function () {
   this.ctx.restore()
 }
+
+WorkShop.prototype.scale = function (x, y) {
+  this.ctx.scale(x, y)
+}
+
+WorkShop.prototype.rect = function (x, y, w, h) {
+  this.ctx.fillRect(x, y, w, h)
+}
+
+export {WorkShop}
